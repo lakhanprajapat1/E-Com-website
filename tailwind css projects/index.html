@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for fixed background image */
+        .bg-fixed-image {
+            background-image: url('https://spacething.in/cdn/shop/files/upscaled_bg_of_product_page.jpg?v=1715467253&width=5120');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; 
+        }
+    </style>
+</head>
+<body>
+<!-- navbar  -->
+<nav class="bg-white p-4 ">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-white text-xl font-bold ">
+        <img src="/image/logo.jpg" alt="" class="h-20" >
+      </div>
+
+      <!-- Menu Items -->
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-black ">Home</a>
+        <a href="contact" class="text-black ">Contact</a>
+        <a href="product" class="text-black ">Products</a>
+        <a href="about" class="text-black ">About</a>
+      </div>
+
+      <!-- Login & Sign Up -->
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-gray-300 hover:text-white">Login</a>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Sign Up</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
+      <a href="#" class="block text-gray-300 hover:text-white p-2">Products</a>
+      <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
+      <a href="#" class="block text-gray-300 hover:text-white p-2">Contact</a>
+      <a href="#" class="block text-gray-300 hover:text-white p-2">Login</a>
+      <a href="#" class="block bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-600">Sign Up</a>
+    </div>
+  </nav>
+
+<!-- main  -->
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Awesome Gadgets</h1>
+              <p class="mt-6 text-lg leading-8 text-gray-600">"Experience sleek, smart, and powerful gadgets designed for ultimate convenience everywhere.".</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#" class="text-bold font-semibold leading-6 text-gray-900 bg-blue-300 rounded-lg px-3">Explore Now ! <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Sticky Background Section -->
+    <div class="bg-fixed-image h-screen flex items-center justify-center text-white">
+        <h1 class="text-4xl font-bold">Welcome to Our Tech Collection</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="p-8">
+        <p class="text-gray-800 mb-4 text-xl text-center">
+            "At Awesome Gadgets, we’re dedicated to delivering cutting-edge technology that enhances your everyday life. Our collection features the latest innovations, combining style, functionality, and unmatched performance. Experience the future today with products designed to make your tech journey seamless and exciting. Whether you’re a tech enthusiast or just looking for the next big thing, Awesome Gadgets has got you covered."
+        </p>
+    </div>
+
+      <!-- Product  -->
+      <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Awesome Gadgets</h2>
+        <div id="Product" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            
+            <!-- Product Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://i.ytimg.com/vi/GS5iBE6EKv8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD3KSzMzLTwRZfAidlBSjHPWmO-nQ" alt="Product 1" class="w-full h-48 object-cover rounded-t-lg ">
+                <h3 class="text-xl font-semibold mt-4">Airpods</h3>
+                <p class="text-gray-600 mt-2"> Starting From $19 </p>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">Buy Now</button>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://i.rtings.com/assets/pages/MH4fGuAk/best-alexa-speakers-20230501-3-medium.jpg?format=auto" alt="Product 2" class=" h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Sound Assistance</h3>
+                <p class="text-gray-600 mt-2">Starting From $21.</p>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">Buy Now</button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://m.media-amazon.com/images/I/5147Rv6jzuL._AC_UF1000,1000_QL80_.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Sound Bar</h3>
+                <p class="text-gray-600 mt-2">Starting From $19</p>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">Buy Now</button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://www.beatxp.com/blog/wp-content/uploads/2023/06/smartwatch-features-1200x900.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Smart Watch</h3>
+                <p class="text-gray-600 mt-2">Starting From $26</p>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">Buy Now</button>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://5.imimg.com/data5/SA/WB/MY-38219723/apple-mobile-earphone.jpg" alt="Product 5" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Earphone</h3>
+                <p class="text-gray-600 mt-2">Starting From $4</p>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">Buy Now</button>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7DMu-7O2189abNd7fPJCirKtnE_NiO93s_g&s" alt="Product 6" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-semibold mt-4">Headphone</h3>
+                <p class="text-gray-600 mt-2">Starting From $8</p>
+                <button class="mt-4 w-full bg-blue-600 text-white p-2 rounded-lg">Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Awesome Gadgets</h3>
+                <p>Delivering the best and latest tech experiences to users. Explore our collection of cutting-edge gadgets designed to enhance your lifestyle.</p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Products</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Support</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Shipping & Returns</a></li>
+                    <li><a href="#" class="hover:underline">Warranty</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                <p>Email: <a href="mailto:support@awesomegadgets.com" class="hover:underline">support@awesomegadgets.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="hover:underline">+1 234 567 890</a></p>
+                <p>Follow us:</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="hover:text-red-600"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
+            &copy; 2024 Awesome Gadgets. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+      <script src="script.js"></script>
+</body>
+</html>
